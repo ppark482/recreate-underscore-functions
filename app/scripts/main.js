@@ -24,7 +24,7 @@ var thisBeNotherArray = [1,3,5,5,6,9];
 
 paul.Unique = function (x) {
   for (var i = 0; i < thisBeNotherArray.length; i++) {
-    if (x[i] !== i) {
+    if (thisBeNotherArray[i] !== i) {
       outputArray.push(x[i]);
     };
   };
@@ -45,6 +45,20 @@ paul.Same = function (x, y) {
   return outputArray;
 };
 
+// Replication of the _.contains function. Look for a value in the array. Return true or false
+var thisArrayThree = [1,2,3,4,5,6,7,8,9];
+
+paul.Has = function (x, y) {
+  for (var i = 0; i < x.length; i++) {
+    if (x[i] === y) {
+      return true;
+    } else {
+      return false;
+    };
+  };
+
+};
+
 var richard = {};
 
 //richard.pairs()
@@ -61,3 +75,18 @@ richard.pairs = function(obj){
 };
 
 richard.pairs({one: "a", two: "b", three: "c"});
+
+// richard.invert()
+
+richard.invert = function(object){
+  var invertedObject = {};
+  for(var x in object){
+    var hold = x;
+    x = object[x];
+    object[x] = hold;
+    return object;
+  }
+};
+
+var names = {Moe: "Moses", Larry: "Louis", Curly: "Jerome"}
+richard.invert(names);
