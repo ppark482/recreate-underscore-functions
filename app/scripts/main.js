@@ -1,4 +1,6 @@
-// Main Object
+// Collaborated with Richard
+
+// Main Variables
 var paul = {},
 inputArray = [],
 outputArray = [],
@@ -42,3 +44,20 @@ paul.Same = function (x, y) {
   };
   return outputArray;
 };
+
+var richard = {};
+
+//richard.pairs()
+
+richard.pairs = function(obj){
+  var keyValPairs = [];
+  for(var key in obj){
+    var x = [];
+    x.push(key);
+    x.push(obj[key]);
+    keyValPairs.push(x);
+  };
+  return keyValPairs;
+};
+
+richard.pairs({one: "a", two: "b", three: "c"});
