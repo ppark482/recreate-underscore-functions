@@ -8,11 +8,11 @@ var userName = prompt("What is your name?");
 
 if (userName !== null) {
   alert('Sup ' + userName + '. Input "paul" into the console to see the available functions.');
-};
+}
 
 paul.greeting = function (x) {
   alert("Go away " + userName + " and come back when you're older.");
-}
+};
 
 
 
@@ -24,8 +24,8 @@ paul.Ignore = function (x, ignore) { // x is an array input by user, ignore is v
   for (var i = 0; i < x.length; i++) {
     if (x[i] !== ignore) {
       outputArray.push(x[i]);
-      };
-    };
+      }
+    }
   return outputArray;
 };
 
@@ -40,9 +40,9 @@ paul.Unique = function (x) { // variable is an array with integers
         x.pop(comp);
       } else {
         outputArray.push(comp);
-      };
-    };
-  };
+      }
+    }
+  }
   return outputArray;
 };
 
@@ -52,8 +52,8 @@ paul.Same = function (x, y) { // variables are two different arrays
   for (var i = 0; i < thisArrayOne.length; i++) {
     if (x[i] === y[i]) {
       outputArray.push(x[i]);
-    };
-  };
+    }
+  }
   return outputArray;
 };
 
@@ -66,8 +66,8 @@ paul.Has = function (x, y) { // variable x is an array, variable y is value to l
       return true;
     } else {
       return false;
-    };
-  };
+    }
+  }
 };
 
 paul.Pairs = function(obj) { // variable is object with multiple properties
@@ -77,7 +77,7 @@ paul.Pairs = function(obj) { // variable is object with multiple properties
     x.push(key);
     x.push(obj[key]);
     keyValPairs.push(x);
-  };
+  }
   return keyValPairs;
 };
 
