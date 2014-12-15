@@ -1,6 +1,8 @@
-## paul JavaScript Library
+# paul JS Library
 
-# Functions
+Recreation of chosen Underscore functions using vanilla JavaScript as a new library.
+
+## Functions
 * .greeting = Returns a greeting
 * .Ignore = Input an array and a value as parameters. Function will return input array without the value parameter.
 * .Unique = Input an array as a parameter. Function will return array without any duplicates. + In testing +
